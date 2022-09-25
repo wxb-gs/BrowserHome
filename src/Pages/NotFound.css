@@ -1,0 +1,29 @@
+.not-found{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi1.hdslb.com%2Fbfs%2Farchive%2F76089298e22f2d87b991e37ab051a5eb3dfc64ad.jpg&refer=http%3A%2F%2Fi1.hdslb.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1664532998&t=fa9a0628f0d47b3f92ebd91b00fd03d7");
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+@media screen and (min-width:865px) {
+    .not-found{
+        background-size:cover ;
+    }
+}
+
+
+.not-found button{
+    width: 200px;
+    height: 50px;
+    color:white;
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    font-size: 1.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid  #fbc2eb;
+
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%);
+}

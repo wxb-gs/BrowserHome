@@ -1,0 +1,39 @@
+.logo{
+    margin-top: 100px;
+    width: 100%;
+}
+.logo img{
+    display: block;
+    margin: 20px auto;
+}
+
+.logo img{
+    transition: opacity 0.5s linear;
+    opacity: 1;
+    width: 242px;
+}
+
+.logo .fade{
+    opacity: 0;
+}
+
+.btn{
+    padding:3px;
+    height: 30px;
+    font-size: 0.5rem;
+    color:white;
+    background-color: blue;
+    border-radius: 10%;
+    margin-right: 15px;
+}
+.choice{
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+}
+
+
+
+
+
+

@@ -1,0 +1,58 @@
+.input-container{
+    width: 60%;
+    margin: 30px auto 60px;
+    height: 50px;
+    
+    border: 2px solid white;
+    border-radius: 5px;
+    position: relative;
+
+}
+.input-container:hover{
+    border-color:blue ;
+}
+
+.input-container:hover .anticon{
+    color:blue;
+}
+
+.input{
+    display: inline-block;
+    border:none;
+    outline:none;
+    color: inherit;
+    word-spacing: 5px;
+    height: 100%;
+    width: 95%;
+    background: none;
+    font-size: 1.5rem;
+    padding-left:15px;
+}
+
+.input-container .anticon{
+    display: inline-flex;
+    height: 100%;
+    position: absolute;
+    right: 10px;
+    font-size: 2rem;
+    width: 40px;
+    align-items: center;
+}
+.input-container .anticon svg:hover{
+    transform: scale(1.2);
+}
+
+
+@media screen and (max-width:588px) {
+    .input{
+        width:50%;
+        font-size: small;
+    }
+    
+}
+
+@media screen and (max-width: 517px) {
+    .input-container{
+        width: 80%;
+    }
+}

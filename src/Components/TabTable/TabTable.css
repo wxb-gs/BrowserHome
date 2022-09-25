@@ -1,0 +1,64 @@
+.tabs {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  width: 60%;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.tab-item {
+  padding-top: 15px;
+  height: 80px;
+}
+.tab-item span {
+  display: inline-block;
+  width: 100px;
+  margin: 10px auto;
+}
+
+.tab-item img {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+
+.tab-item a span {
+  display: block;
+}
+
+.tabs .tab-item a:hover {
+  color: blue;
+}
+
+.tabs .tab-item a {
+  text-decoration: none;
+  display: block;
+  color: inherit; /*继承父级元素的颜色*/
+}
+
+
+
+@media screen and (max-width: 688px) {
+  .tabs {
+    margin: auto;
+  }
+  .tab-item a span {
+   font-size: small;
+   width: auto;
+  }
+}
+@media screen and (max-width: 517px) {
+    
+  .tabs {
+    grid-template-columns: repeat(4, auto);
+    margin: auto;
+    width: 80%;
+  }
+  .tab-item img {
+    padding-top: 15px;
+    height: auto;
+  }
+  .tab-item a span {
+    display: none;
+  }
+}

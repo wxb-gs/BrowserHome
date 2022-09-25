@@ -1,0 +1,81 @@
+.card{
+    min-height: 460px;
+    width: 400px;
+    background-color:black;
+    border-radius: 5px;
+
+    /* position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%); */
+
+    margin:auto;
+
+    /* 通过display:flex让内部 */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    /*设置overflow*/
+    overflow: hidden;
+    
+    position: relative;
+}
+
+.card::after{
+    /* top:0;
+       left: 0; 
+        justify-content: center;
+        align-items: center;
+        可以影响absolute元素的位置,默认是居中显示该绝对定位的元素
+    */
+    content: "";
+    display: block;
+    position:absolute;
+    /*宽高保证旋转时能够大于对角线*/
+    width: 700px;
+    height: 700px;
+    background-image:conic-gradient(transparent,transparent,transparent,#d400d4) ;
+    animation: animate 3s linear infinite;
+    /* 避免重叠，动画可以延迟一半时间,设为负值则提前2s的结果开始 */
+    animation-delay:-1.5s ;
+}
+
+.card::before{
+   
+    /* top:0;
+       left: 0; 
+        justify-content: center;
+        align-items: center;
+        可以影响absolute元素的位置,默认是居中显示该绝对定位的元素
+    */
+    content: "";
+    display: block;
+    position:absolute;
+    width: 700px;
+    height: 700px;
+    background-image:conic-gradient(transparent,transparent,transparent,#00ccff) ;
+    animation: animate 3s linear infinite;
+}
+
+.card .form{
+    position: absolute;
+    /*设置inset使span元素占满，并留偏移量大小的空间 */
+    inset: 5px;
+    background-color: rgb(26, 26, 26);
+    border-radius:10px;
+    background-color: rgb(26, 26, 26);
+    /* 设置span覆盖::after */
+    z-index: 1;
+}
+
+
+
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

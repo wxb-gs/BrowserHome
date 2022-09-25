@@ -1,0 +1,111 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 40px 5px;
+}
+.has_erro{
+    padding-top: 20px;
+}
+
+.form h2{
+    font-size: 2rem;
+    font-weight: 700;
+    color:white;
+    text-align: center;
+    letter-spacing: 0.1rem;
+}
+.inputBox{
+    margin-top: 45px;
+    position: relative;
+    width: 300px;
+}
+
+.inputBox input{
+    position: relative;
+    font-size: 1rem;
+    color:#23242a;
+    letter-spacing: 0.15rem;
+    padding:10px 10px 10px;
+    /* height: 60px; */
+    width: 100%;
+    outline:none;
+    border: none;
+    
+    background-color: transparent;
+
+    z-index: 100;
+    /* transition不设置属性 默认为all*/
+    transition: 0.8s;
+}
+
+.inputBox span{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(89, 132, 170);
+    padding:14px 10px 10px;
+    letter-spacing: 0.15rem;
+
+    /* ？ */
+    position: absolute;
+    left:0;
+    transition: 0.8s;
+}
+
+.inputBox .inner:focus~span,
+.inputBox .inner:valid~span{
+    color:white;
+    transform: translate(-10px,-3rem);
+    font-size: 0.95rem;
+}
+
+.inputBox i{
+    position: absolute;
+    height:2px;
+    width: 100%;
+    background-color: white;
+    left: 0;
+    bottom: 0;
+
+    border-radius: 2px;
+    transition: 0.8s;
+
+}
+
+.inputBox .inner:focus~i,
+.inputBox .inner:valid~i
+{
+    height: 3rem;
+}
+
+
+.other-link{
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.other-link a{
+    color: rgb(121, 99, 58);
+    text-decoration: none;
+    font-size:0.75rem;
+}
+
+.btn{
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.4rem;
+
+    margin: 30px auto;
+    border: none;
+    color:white;
+    background-color: black;
+    border-radius: 5px;
+    width: 200px;
+    height: 40px;
+}
+
+
+.btn:active{
+   opacity: 0.6;
+   border: 1px solid white;
+}
